@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="40ebedfd-108a-4152-8ad7-586f42278874" name="Default Changelist" comment="Stability">
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/ProjectTasks/service/MailService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ProjectTasks" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ProjectTasks" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Max Shevchuk &lt;www.maxim2003@ukr.net&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="21sYlKE1DTXnSJ2VV0vXuZ5rLDv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jdk" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Education\com.example\src\main\resources\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Education\projects\src\main\resources\db\migration" />
+      <recent name="D:\Education\projects\src\main\resources\static" />
+      <recent name="D:\Education\com.example\src\main\resources\db\migration" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application (1)">
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.ProjectTasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.ProjectTasks.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="com.example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.ProjectTasks.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.ProjectTasks.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="ProjectTasks: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="ProjectTasks: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@8a88ca" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40ebedfd-108a-4152-8ad7-586f42278874" name="Default Changelist" comment="" />
+      <created>1638731411824</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638731411824</updated>
+      <workItem from="1638731416806" duration="1968000" />
+      <workItem from="1638738047306" duration="3989000" />
+      <workItem from="1638776879797" duration="1142000" />
+      <workItem from="1639122863179" duration="300000" />
+      <workItem from="1639135761146" duration="747000" />
+      <workItem from="1639140962597" duration="4289000" />
+      <workItem from="1639148334784" duration="2116000" />
+      <workItem from="1639164296986" duration="3897000" />
+      <workItem from="1639168494323" duration="4154000" />
+      <workItem from="1639219304649" duration="1558000" />
+      <workItem from="1639242397785" duration="676000" />
+      <workItem from="1639254151247" duration="1864000" />
+      <workItem from="1639257848015" duration="1231000" />
+      <workItem from="1639339885939" duration="242000" />
+      <workItem from="1639663701621" duration="3993000" />
+      <workItem from="1639744046964" duration="5406000" />
+      <workItem from="1639753871147" duration="1402000" />
+      <workItem from="1639757602510" duration="875000" />
+      <workItem from="1639823609527" duration="7776000" />
+      <workItem from="1639856332741" duration="2478000" />
+      <workItem from="1640245738062" duration="1320000" />
+      <workItem from="1640251797157" duration="5747000" />
+      <workItem from="1640374150260" duration="3104000" />
+      <workItem from="1640441191017" duration="528000" />
+      <workItem from="1640444157152" duration="718000" />
+      <workItem from="1640445585028" duration="1604000" />
+      <workItem from="1640513753564" duration="24000" />
+      <workItem from="1640546641696" duration="2724000" />
+      <workItem from="1640598327061" duration="5618000" />
+      <workItem from="1640617259492" duration="1574000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added bugs">
+      <created>1638742217745</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638742217745</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Finally works">
+      <created>1639150476431</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639150476431</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added freemarker support">
+      <created>1639659099874</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639659099874</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added bootstrap support and fixed login bug">
+      <created>1639737211409</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639737211409</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added navbar, login/logout on navbar">
+      <created>1639749530984</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639749530984</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added task controllers with authorities">
+      <created>1639832548870</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639832548870</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added migrations&#10;Added profile with password changing">
+      <created>1640258126998</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640258126998</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Transported project to another devica">
+      <created>1640549380759</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640549380759</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="1f012913-3cfb-41f2-8c5b-3d764f1f038d">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="542d26a4-9639-4ec8-b9fc-76f8e2b10bdb">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="5bf65263-3652-4514-99a4-cfc262144b96">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="97bc386f-2d21-471e-adf4-83386be4a03f">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="d0adfebf-71ce-4bd8-b016-900a06508cd1">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="e4b3bfaf-6ec1-4679-b0d6-cc6d73fdb729">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1f012913-3cfb-41f2-8c5b-3d764f1f038d" value="TOOL_WINDOW" />
+        <entry key="542d26a4-9639-4ec8-b9fc-76f8e2b10bdb" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added BD" />
+    <MESSAGE value="Added bugs" />
+    <MESSAGE value="Finally works" />
+    <MESSAGE value="Registration added" />
+    <MESSAGE value="Added freemarker support" />
+    <MESSAGE value="Added bootstrap support and fixed login bug" />
+    <MESSAGE value="Added navbar, login/logout on navbar" />
+    <MESSAGE value="Added task controllers with authorities" />
+    <MESSAGE value="Added migrations&#10;Added profile with password changing" />
+    <MESSAGE value="Transported project to another devica" />
+    <option name="LAST_COMMIT_MESSAGE" value="Transported project to another devica" />
+  </component>
+</project>

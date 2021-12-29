@@ -1,0 +1,10 @@
+<#import "parts/common.ftlh" as c>
+<#import "parts/login.ftlh" as l>
+
+<@c.page>
+<body>
+Add new user
+        ${message?ifExists}
+<@l.login "/registration" true/>
+</body>
+</@c.page>
