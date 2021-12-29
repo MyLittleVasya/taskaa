@@ -49,7 +49,7 @@ public class UserService  implements UserDetailsService {
                     "Hello, %s! \n" +
                             "Welcome to TaskA! \n"+
                             "Visit next link to activate your account \n"+
-                            "http://localhost:8080/activate/%s",
+                            "http://fitmestest.herokuapp.com/activate/%s",
                     user.getUsername(),
                     user.getActivationCode()
 

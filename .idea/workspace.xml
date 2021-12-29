@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ebedfd-108a-4152-8ad7-586f42278874" name="Default Changelist" comment="Stability">
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/ProjectTasks/service/MailService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="40ebedfd-108a-4152-8ad7-586f42278874" name="Default Changelist" comment="Stability" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +76,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -194,6 +190,7 @@
       <workItem from="1640546641696" duration="2724000" />
       <workItem from="1640598327061" duration="5618000" />
       <workItem from="1640617259492" duration="1574000" />
+      <workItem from="1640787647351" duration="199000" />
     </task>
     <task id="LOCAL-00001" summary="Added bugs">
       <created>1638742217745</created>
