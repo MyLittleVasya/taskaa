@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ebedfd-108a-4152-8ad7-586f42278874" name="Default Changelist" comment="For Heroku">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__encoding.sql" afterDir="false" />
+    <list default="true" id="40ebedfd-108a-4152-8ad7-586f42278874" name="Default Changelist" comment="preparing">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ProjectTasks/config/FlywayConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ProjectTasks/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ProjectTasks/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ProjectTasks/domain/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ProjectTasks/domain/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ProjectTasks/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ProjectTasks/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ProjectTasks/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ProjectTasks/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__add_admin.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__add_admin.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ProjectTasks/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ProjectTasks/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ProjectTasks/domain/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ProjectTasks/domain/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ProjectTasks/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ProjectTasks/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/ProjectTasks/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/ProjectTasks/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V2__add_admin.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__add_admin.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +195,7 @@
       <workItem from="1640617259492" duration="1574000" />
       <workItem from="1640787647351" duration="199000" />
       <workItem from="1640787881933" duration="415000" />
-      <workItem from="1640943425589" duration="2665000" />
+      <workItem from="1640943425589" duration="3910000" />
     </task>
     <task id="LOCAL-00001" summary="Added bugs">
       <created>1638742217745</created>
@@ -274,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640787921080</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="preparing">
+      <created>1640946465381</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1640946465381</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,6 +401,7 @@
     <MESSAGE value="Added migrations&#10;Added profile with password changing" />
     <MESSAGE value="Transported project to another devica" />
     <MESSAGE value="For Heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="For Heroku" />
+    <MESSAGE value="preparing" />
+    <option name="LAST_COMMIT_MESSAGE" value="preparing" />
   </component>
 </project>
