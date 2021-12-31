@@ -11,6 +11,8 @@ public class Task {
     private long id;
     private String name;
     private String description;
+    private boolean isDone;
+    private String date;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
@@ -28,6 +30,8 @@ public class Task {
         this.name = name;
         this.description = description;
         this.executor = executor;
+        this.isDone = false;
+        this.date = null;
     }
 
 
@@ -63,4 +67,19 @@ public class Task {
         this.executor = executor;
     }
 
+    public boolean isDone() {
+        return isDone;
+    }
+
+    public void setDone(boolean done) {
+        isDone = done;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 }

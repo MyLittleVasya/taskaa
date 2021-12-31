@@ -18,7 +18,7 @@ public class User implements UserDetails {
     private String username;
     private String password;
     private boolean active;
-
+    private boolean sessionStarted;
     private String email;
     private String activationCode;
 
@@ -111,5 +111,13 @@ public class User implements UserDetails {
 
     public void setActivationCode(String activationCode) {
         this.activationCode = activationCode;
+    }
+
+    public boolean isSessionStarted() {
+        return sessionStarted;
+    }
+
+    public void setSessionStarted(boolean sessionStarted) {
+        this.sessionStarted = sessionStarted;
     }
 }
