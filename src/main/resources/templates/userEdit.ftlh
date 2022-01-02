@@ -9,6 +9,7 @@ User editor
                     ${role}</label>
             </div>
         </#list>
+        <input type="number" value="${payment}" name="payment">
         <button type="submit">Save changes</button>
         <input type="hidden" value="${user.id}" name="userId">
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>

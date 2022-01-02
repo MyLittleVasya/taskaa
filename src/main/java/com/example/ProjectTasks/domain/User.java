@@ -21,6 +21,8 @@ public class User implements UserDetails {
     private boolean sessionStarted;
     private String email;
     private String activationCode;
+    private long salary;
+    private long payPerTask;
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))
@@ -119,5 +121,21 @@ public class User implements UserDetails {
 
     public void setSessionStarted(boolean sessionStarted) {
         this.sessionStarted = sessionStarted;
+    }
+
+    public long getSalary() {
+        return salary;
+    }
+
+    public void setSalary(long salary) {
+        this.salary = salary;
+    }
+
+    public long getPayPerTask() {
+        return payPerTask;
+    }
+
+    public void setPayPerTask(long payPerTask) {
+        this.payPerTask = payPerTask;
     }
 }

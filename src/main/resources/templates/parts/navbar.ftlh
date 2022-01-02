@@ -24,6 +24,23 @@
                 </#if>
                 </#if>
             </ul>
+            <#if isActive>
+                <#if !sessionStarted>
+                    <div class="nav-item">
+                        <form method="post">
+                            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+                            <button type="submit" class="btn btn-primary btn-my m-2">Start Session</button>
+                        </form>
+                    </div>
+                <#else>
+                    <div class="nav-item">
+                        <form method="post">
+                            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+                            <button type="submit" class="btn btn-primary btn-my m-2">End session</button>
+                        </form>
+                    </div>
+                </#if>
+            </#if>
             <div class="nav-item">
                 <a class="nav-link" aria-current="page" href="user/profile">${name}</a>
             </div>

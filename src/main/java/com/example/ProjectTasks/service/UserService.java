@@ -47,13 +47,15 @@ public class UserService  implements UserDetailsService {
         user.setRoles(Collections.singleton(Role.USER));
         user.setActivationCode(UUID.randomUUID().toString());
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setSalary(0);
+        user.setPayPerTask(0);
         userRepo.save(user);
         if (!StringUtils.isEmpty(user.getEmail())){
             String message = String.format(
                     "Hello, %s! \n" +
                             "Welcome to TaskA! \n"+
                             "Visit next link to activate your account \n"+
-                            "http://fitmestest.herokuapp.com/activate/%s",
+                            "http://localhost:8080/activate/%s",
                     user.getUsername(),
                     user.getActivationCode()
 

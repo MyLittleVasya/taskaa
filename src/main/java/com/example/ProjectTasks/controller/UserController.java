@@ -35,6 +35,7 @@ public class UserController {
     public String userEditForm(@PathVariable User user, Model model){
         model.addAttribute("user", user);
         model.addAttribute("roles", Role.values());
+        model.addAttribute("payment", user.getPayPerTask());
         return "userEdit";
     }
     @PreAuthorize("hasAuthority('ADMIN')")
@@ -42,9 +43,11 @@ public class UserController {
     public String userSave(
             @RequestParam("userId") User user,
             @RequestParam String username,
-            @RequestParam Map<String, String> form
+            @RequestParam Map<String, String> form,
+            @RequestParam long payment
     ){
         user.setUsername(username);
+        user.setPayPerTask(payment);
         Set<String> roles = Arrays.stream(Role.values())
                 .map(Role::name)
                 .collect(Collectors.toSet());
