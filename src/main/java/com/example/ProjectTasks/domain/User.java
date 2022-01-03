@@ -34,6 +34,10 @@ public class User implements UserDetails {
         return roles.contains(Role.ADMIN);
     }
 
+    public boolean isTeamLead(){
+        return roles.contains(Role.TEAMLEAD);
+    }
+
     @Override
     public boolean isAccountNonExpired() {
         return true;

@@ -9,32 +9,62 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <#if isAdmin>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/user">User list</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/taskAdder">Add task</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/user">User list</a>
+                    </li>
+                </#if>
+                <#if isAdmin || isTeamlead>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/taskAdder">Add task</a>
+                    </li>
                 </#if>
                 <#if isActive>
-                <#if !(isAdmin)>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/taskList">Tasks</a>
-                </li>
+                    <#if !(isAdmin)>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/taskList">Tasks</a>
+                        </li>
+                    </#if>
                 </#if>
+                <#if isActive>
+                    <#if isAdmin>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/doneTasks">Done Tasks</a>
+                        </li>
+                        <#elseif isTeamlead>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/doneTasks">Done Tasks</a>
+                            </li>
+                    </#if>
                 </#if>
             </ul>
+            <#if isActive>
+                <#if !sessionStarted>
+                    <div class="nav-item">
+                        <form action="/session" method="post">
+                            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+                            <button type="submit" class="btn btn-primary btn-my m-2">Start Session</button>
+                        </form>
+                    </div>
+                <#else>
+                    <div class="nav-item">
+                        <form action="/session" method="post">
+                            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+                            <button type="submit" class="btn btn-primary btn-my m-2">End session</button>
+                        </form>
+                    </div>
+                </#if>
+            </#if>
             <div class="nav-item">
                 <a class="nav-link" aria-current="page" href="user/profile">${name}</a>
             </div>
             <#if isActive>
-            <@l.logout />
+                <@l.logout />
             </#if>
             <#if !isActive>
-            <form action="/login">
-            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-            <button type="submit" class="btn btn-primary btn-my m-2">Login</button>
-            </form>
+                <form action="/login">
+                <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+                <button type="submit" class="btn btn-primary btn-my m-2">Login</button>
+                </form>
             </#if>
         </div>
     </div>

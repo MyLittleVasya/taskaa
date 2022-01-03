@@ -25,7 +25,7 @@ public class MainController {
         return "login";
     }
 
-    @PostMapping("/*")
+    @PostMapping("/session")
     public String startSession(
             @AuthenticationPrincipal User user
     ) {

@@ -13,6 +13,7 @@ public class Task {
     private String description;
     private boolean isDone;
     private String date;
+    private boolean confirmed;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
@@ -81,5 +82,13 @@ public class Task {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public boolean isConfirmed() {
+        return confirmed;
+    }
+
+    public void setConfirmed(boolean confirmed) {
+        this.confirmed = confirmed;
     }
 }

@@ -2,6 +2,7 @@ create sequence hibernate_sequence start 2 increment 1;
 
 create table tasks (
     id int8 not null,
+    confirmed boolean not null,
     date varchar(255),
     description varchar(255),
     is_done boolean not null,
@@ -18,9 +19,11 @@ create table usr (
     activation_code varchar(255),
     active boolean not null,
     email varchar(255),
-    password varchar(255) not null ,
+    password varchar(255),
+    pay_per_task int8 not null,
+    salary int8 not null,
     session_started boolean not null,
-    username varchar(255) not null ,
+    username varchar(255),
     primary key (id));
 
 alter table if exists tasks add constraint FKid0236jhnltusxn9qmkwlbkog foreign key (user_id) references usr;

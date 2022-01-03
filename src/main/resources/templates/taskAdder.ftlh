@@ -1,7 +1,8 @@
 <#import "parts/common.ftlh" as c>
+<#include "parts/security.ftlh">
 
 <@c.page>
-
+    <label>${message?ifExists}</label>
     <form action="/taskAdder" method="post">
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
         <div class="row mb-3">
@@ -21,7 +22,16 @@
         <input class="form-control-sm-10" list="datalistOptions" name="executor" placeholder="Type to search...">
         <datalist id="datalistOptions">
             <#list users as user>
-                <option value=${user.username}>
+                <#if isAdmin>
+                        <#if !(user.isAdmin())>
+                            <option value=${user.username}>
+                        </#if>
+                </#if>
+                <#if isTeamlead>
+                        <#if !(user.isAdmin()) && !(user.isTeamLead())>
+                            <option value=${user.username}>
+                        </#if>
+                </#if>
             </#list>
         </datalist>
         </div>
