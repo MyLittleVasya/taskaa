@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/static/style.css">
     <title>TaskA</title>
 </head>
-<body>
+<body bgcolor="#7fffd4">
 <#include "navbar.ftlh">
 <div class="container">
 <#nested>

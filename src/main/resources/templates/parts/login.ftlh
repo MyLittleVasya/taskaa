@@ -1,28 +1,18 @@
 <#macro login path isRegisterForm>
     <form action="${path}" method="post">
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-        <div class="row mb-3">
             <label> User Name :  </label>
-            <div class="col-sm-10">
-                <input type="text" name="username" placeholder="username"/>
-            </div>
-        </div>
-        <div class="row mb-3">
-            <label> Password:</label>
-            <div class="col-sm-10">
-                <input type="password" name="password" placeholder="password"/>
-            </div>
-        </div>
+                <input class="input-group-text" type="text" name="username" placeholder="username"/>
+            <label>Password:</label>
+                <input class="input-group-text" type="password" name="password" placeholder="password"/>
         <#if isRegisterForm>
-        <div class="row mb-3">
             <label> email:</label>
-            <div class="col-sm-10">
-                <input type="email" name="email" placeholder="example@ex.com"/>
-            </div>
-        </div>
+                <input class="input-group-text" type="email" name="email" placeholder="example@ex.com"/>
         </#if>
-        <div><button type="submit" class="btn btn-primary bg-success m-2">Sign in</button></div>
-        <a href = "/registration">Registration</a>
+        <div><button type="submit" class="btn btn-primary btn-my m-2">Sign in</button></div>
+        <#if !isRegisterForm>
+            <a href = "/registration">Registration</a>
+        </#if>
     </form>
 </#macro>
 

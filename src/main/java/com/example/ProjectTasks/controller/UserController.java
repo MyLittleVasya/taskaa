@@ -38,6 +38,7 @@ public class UserController {
         model.addAttribute("user", user);
         model.addAttribute("roles", Role.values());
         model.addAttribute("payment", user.getPayPerTask());
+        model.addAttribute("salary", user.getSalary());
         return "userEdit";
     }
     @PreAuthorize("hasAuthority('ADMIN')")
@@ -46,10 +47,12 @@ public class UserController {
             @RequestParam("userId") User user,
             @RequestParam String username,
             @RequestParam Map<String, String> form,
-            @RequestParam long payment
+            @RequestParam long payment,
+            @RequestParam long salary
     ){
         user.setUsername(username);
         user.setPayPerTask(payment);
+        user.setSalary(salary);
         Set<String> roles = Arrays.stream(Role.values())
                 .map(Role::name)
                 .collect(Collectors.toSet());
@@ -70,8 +73,12 @@ public class UserController {
     }
 
     @PostMapping("profile")
-    public String updProfile(@AuthenticationPrincipal User user, @RequestParam String password){
-        userService.updateProfile(user, password);
+    public String updProfile(
+            @AuthenticationPrincipal User user,
+            @RequestParam String password,
+            @RequestParam String email
+    ){
+        userService.updateProfile(user, password, email);
         return "redirect:/user/profile";
     }
 }

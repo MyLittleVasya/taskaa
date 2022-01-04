@@ -10,6 +10,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -64,6 +65,14 @@ public class TaskController {
                     return "taskAdder";
                 }
             }
+            if (StringUtils.isEmpty(task.getDescription())){
+                model.addAttribute("message", "Description shouldn't be empty");
+                return "taskAdder";
+            }
+            if (StringUtils.isEmpty(task.getName())){
+                model.addAttribute("message", "Name of task shouldn't be empty");
+                return "taskAdder";
+            }
             taskRepo.save(task);
             return "taskAdder";
         }
@@ -77,14 +86,24 @@ public class TaskController {
         return "doneTasks";
     }
 
-    @PostMapping("/doneTasks")
-    @PreAuthorize("hasAuthority('ADMIN')")
-    public String getDoneTasks(@RequestParam long taskId){
+    @PostMapping("/doneTasks/confirm")
+    @PreAuthorize("hasAnyAuthority('ADMIN', 'TEAMLEAD')")
+    public String confirmTask(@RequestParam long taskId){
         Task task = taskRepo.findById(taskId);
         User user = userRepo.findById(task.getExecutor().getId());
         task.setConfirmed(true);
         user.setSalary(user.getSalary()+user.getPayPerTask());
         userRepo.save(user);
+        taskRepo.save(task);
+        return "redirect:/doneTasks";
+    }
+
+
+    @PostMapping("/doneTasks/return")
+    @PreAuthorize("hasAnyAuthority('ADMIN', 'TEAMLEAD')")
+    public String returnTask(@RequestParam long taskId){
+        Task task = taskRepo.findById(taskId);
+        task.setDone(false);
         taskRepo.save(task);
         return "redirect:/doneTasks";
     }

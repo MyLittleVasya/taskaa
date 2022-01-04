@@ -5,6 +5,9 @@
     color: white;
 
 }
+.card{
+    background-color: #6EB4A8;
+}
 
 .btn-my:hover,
 
@@ -16,4 +19,12 @@
 
     color: white;
 
+}
+
+body{
+    background-color: #A6FDC9;
+}
+
+.roles_class{
+    max-width: 16%;
 }

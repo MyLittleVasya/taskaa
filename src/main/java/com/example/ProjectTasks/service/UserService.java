@@ -27,12 +27,19 @@ public class UserService  implements UserDetailsService {
         return userRepo.findByUsername(username);
     }
 
-    public void updateProfile(User user, String password) {
+    public void updateProfile(User user, String password, String email) {
         String userPassword = user.getPassword();
+        String userEmail = user.getEmail();
         boolean passwordChanged = (password != null && !password.equals(userPassword));
+        boolean emailChanged = (email != null && !email.equals(userEmail));
         if (!StringUtils.isEmpty(password)) {
             if (passwordChanged) {
                 user.setPassword(passwordEncoder.encode(password));
+            }
+        }
+        if (!StringUtils.isEmpty(email)){
+            if (emailChanged){
+                user.setEmail(email);
             }
         }
         userRepo.save(user);
@@ -55,7 +62,7 @@ public class UserService  implements UserDetailsService {
                     "Hello, %s! \n" +
                             "Welcome to TaskA! \n"+
                             "Visit next link to activate your account \n"+
-                            "http://fitmestest.herokuapp.com/activate/%s",
+                            "http://localhost:8080/activate/%s",
                     user.getUsername(),
                     user.getActivationCode()
 

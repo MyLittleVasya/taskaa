@@ -16,7 +16,7 @@ public class MainController {
     private UserRepo userRepo;
     /*Start page on / address*/
     @GetMapping("/")
-    public String greeting(String name, Model model) {
+    public String greeting() {
         return "greeting";
     }
 
