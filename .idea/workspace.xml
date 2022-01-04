@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ebedfd-108a-4152-8ad7-586f42278874" name="Default Changelist" comment="Final Release #1">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.ftlh" afterDir="false" />
-    </list>
+    <list default="true" id="40ebedfd-108a-4152-8ad7-586f42278874" name="Default Changelist" comment="Final Release #2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,7 +206,7 @@
       <workItem from="1641218081629" duration="10370000" />
       <workItem from="1641288962800" duration="2002000" />
       <workItem from="1641302905780" duration="4263000" />
-      <workItem from="1641310142758" duration="6174000" />
+      <workItem from="1641310142758" duration="6531000" />
     </task>
     <task id="LOCAL-00001" summary="Added bugs">
       <created>1638742217745</created>
@@ -329,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641315999334</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Final Release #2">
+      <created>1641316402833</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1641316402833</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +475,8 @@
     <MESSAGE value="Secured all cases of creating tasks&#10;Added teamlead authority and functions" />
     <MESSAGE value="Deploy test #1" />
     <MESSAGE value="Final Release #1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Release #1" />
+    <MESSAGE value="Final Release #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Release #2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/projects$Application__1_.ic" NAME="Application (1) Coverage Results" MODIFIED="1641224536546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

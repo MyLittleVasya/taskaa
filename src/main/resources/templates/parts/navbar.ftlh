@@ -63,7 +63,7 @@
                 </#if>
             </#if>
             <div class="nav-item m-2">
-                <form action="user/profile">
+                <form action="profile">
                     <input type="hidden" name="_csrf" value="${_csrf.token}"/>
                     <button type="submit" class="btn btn-primary btn-my">${name} profile</button>
                 </form>
