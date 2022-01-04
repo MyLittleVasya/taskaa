@@ -3,7 +3,7 @@
     <div class="row row-cols-4">
         <#list users as user>
             <#if !user.isAdmin()>
-                <div class="card col m-1"">
+                <div class="card col m-1">
                     <div class="card-body">
                          <p>Username:   <h5>${user.username}</h5></p>
                          <p>Roles:   <h5><#list user.roles as role>${role}<#sep>, </#list></h5></p>

@@ -10,10 +10,10 @@
         <div class="row mb-3">
             <label> Password:</label>
             <div class="mt-2">
-                <input type="password" name="password" placeholder="password"/>
+                <input class="input-group-text" type="password" name="password" placeholder="password"/>
             </div>
             <div class="mt-2">
-                <input type="email" name="email" value="${user.getEmail()?ifExists}" placeholder="example@ex.com"/>
+                <input class="input-group-text" type="email" name="email" value="${user.getEmail()?ifExists}" placeholder="example@ex.com"/>
             </div>
         </div>
         <div><button type="submit" class="btn btn-primary btn-my" >Save</button></div>
