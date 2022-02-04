@@ -68,6 +68,15 @@
                     </div>
                 </div>
             </div>
+            <div class="col m-1">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>For using admin profile use:</h4>
+                            <h5>login: admin</h5>
+                            <h5>password: 1</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </@c.page>
